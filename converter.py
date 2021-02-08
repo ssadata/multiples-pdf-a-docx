@@ -16,7 +16,7 @@ path_output = '/pdftodocx/output/'
 
 for file in os.listdir(path_input):
 	cv = Converter(path_input+file)
-	cv.convert(path_output+file+'.docx', start=0, end=None)
+	cv.convert(path_output+file+'.docx', start=0, end=None) # Hay que corregir el quitar '.pdf' ya que queda en el nombre del archivo
 	cv.close()
 	print(file)
 
